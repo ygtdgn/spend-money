@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "Sakız",
+        "price": 0.5
+    },
+    {
+        "id": 2,
+        "title": "Cool Lime EX",
+        "price": 44
+    },
+    {
+        "id": 3,
+        "title": "Mercedes S680 Maybach",
+        "price": 10000000
+    }
+]
