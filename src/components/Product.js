@@ -1,4 +1,8 @@
 import { useState } from "react";
+import { Container, Row } from "react-bootstrap";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 
 function Product({product, total, money, basket, setBasket}){
     
@@ -29,27 +33,18 @@ function Product({product, total, money, basket, setBasket}){
     }
 
     return(
-        <>
-            <div className="product">
-            <h3>{product.title}</h3>
-            <div className="price">$ {product.price}</div>
+        <Card style={{width: '18rem'}}>
+            <Card.Body > 
+            <Card.Title className="card-title">{product.title}</Card.Title>
+            <Card.Text className="price">$ {product.price}</Card.Text>
             <div className="actions">
                 <button disabled={!basketItem} onClick={removeBasket}>Sat</button>
                 <span>{basketItem && basketItem.amount || 0}</span>
-                <button disabled={total + product.price > money } onClick={addBasket}>Satin Al</button>
+                <Button variant="primary" disabled={total + product.price > money } onClick={addBasket}>Satin Al</Button>
             </div>
-            <style jsx>{`
-            .product{
-                padding: 10px;
-                background-color: #fff;
-                border: 1px solid #ddd;
-                margin-bottom: 20px;
-            }
-            `
-            }
-            </style>
-            </div>
-        </>
+
+            </Card.Body>
+        </Card>
     )
 }
 
