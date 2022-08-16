@@ -3,6 +3,8 @@ import Product from './components/Product'
 import Basket from './components/Basket'
 import { useState, useEffect } from "react";
 import products from './products.json'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import './App.css';
 
 
