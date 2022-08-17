@@ -7,10 +7,10 @@ function Header({total, money}){
         <>
         
             {total > 0 && money - total !== 0 &&(           
-                <div className='header'>Harcayacak <span>${moneyFormat(money - total)}</span> kadar paraniz kaldi!</div>
+                <div className='header'><span>${moneyFormat(money - total)}</span> </div>
             )}
             {total === 0 &&(
-               <div className='header'>Harcamak icin <span>${moneyFormat(money)}</span> paraniz var!</div> 
+               <div className='header'><span>${moneyFormat(money)}</span> </div> 
             )}
 
             {money - total === 0 &&(
