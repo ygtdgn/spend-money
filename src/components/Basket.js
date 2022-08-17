@@ -1,5 +1,6 @@
 import { useState } from "react";
 import BasketItem from "./BasketItem";
+import { Button } from 'reactstrap'
 
 
 function Basket({basket, resetBasket, products, total}){
@@ -12,7 +13,7 @@ function Basket({basket, resetBasket, products, total}){
          <div>
             Toplam: ${total}
          </div>
-         <button onClick={resetBasket}>Sepeti Sifirla</button>
+         <Button color="warning" onClick={resetBasket}>Sepeti Sifirla</Button>
         </>
     )
 }

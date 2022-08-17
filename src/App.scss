@@ -1,0 +1,76 @@
+
+.App {
+    text-align: center;
+
+  }
+  
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+
+  
+  .header {
+    background: #c2e59c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 1px;
+    position: sticky;
+    top: 0;
+     span{
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  }
+  .product{
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    width: 24%;
+    img{
+        width: 100%;
+    }
+    h6{
+        margin-top: 15px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .price{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .actions{
+        margin-top: 15px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        .amount{
+            width: 50px;
+            text-align: center;
+            border: 1px solid #ddd;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-style: 17px;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Container, Row } from "react-bootstrap";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import '../App.css'
+import { moneyFormat } from "../helpers";
+import { Button } from "reactstrap"
 
 
 function Product({product, total, money, basket, setBasket}){
@@ -33,18 +33,20 @@ function Product({product, total, money, basket, setBasket}){
     }
 
     return(
-        <Card style={{width: '18rem'}}>
-            <Card.Body > 
-            <Card.Title className="card-title">{product.title}</Card.Title>
-            <Card.Text className="price">$ {product.price}</Card.Text>
+        
+           <>
+           <div className="product">
+            <img src={product.image} />
+            <h6>{product.title}</h6>
+            <div className="price">${moneyFormat(product.price)}</div>
             <div className="actions">
-                <button disabled={!basketItem} onClick={removeBasket}>Sat</button>
-                <span>{basketItem && basketItem.amount || 0}</span>
-                <Button variant="primary" disabled={total + product.price > money } onClick={addBasket}>Satin Al</Button>
+                <Button color="danger" disabled={!basketItem} onClick={removeBasket}>Sat</Button>
+                <span className="amount">{basketItem && basketItem.amount || 0}</span>
+                <Button color="primary" disabled={total + product.price > money} onClick={addBasket}>Satin Al</Button>
             </div>
-
-            </Card.Body>
-        </Card>
+           </div>
+           </>
+      
     )
 }
 

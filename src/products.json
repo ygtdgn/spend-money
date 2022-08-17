@@ -2,16 +2,25 @@
     {
         "id": 1,
         "title": "Sakız",
-        "price": 0.5
+        "price": 0.5,
+        "image": "https://productimages.hepsiburada.net/s/26/1500/10147913498674.jpg"
     },
     {
         "id": 2,
         "title": "Cool Lime EX",
-        "price": 44
+        "price": 44,
+        "image": "https://www.loxy.net/wp-content/uploads/2018/09/starbucks-cool-lime.jpg"
     },
     {
         "id": 3,
         "title": "Mercedes S680 Maybach",
-        "price": 10000000
+        "price": 1000000,
+        "image": "https://i0.wp.com/otonomhaber.com/wp-content/uploads/2022/03/271692332_171920431814139_659875762004882084_n.jpg?resize=800%2C800&ssl=1"
+    },
+    {
+        "id": 4,
+        "title": "Airbus A380",
+        "price": 450000000,
+        "image": "https://indigodergisi.com/wp-content/uploads/2017/06/airbus-a380-plus-dunyanin-en-buyuk-yolcu-ucagi-paris-air-show-2.jpg"
     }
 ]

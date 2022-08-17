@@ -3,15 +3,13 @@ import Product from './components/Product'
 import Basket from './components/Basket'
 import { useState, useEffect } from "react";
 import products from './products.json'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import './App.css';
 
 
 
 function App() {
 
-  const [money, setMoney] = useState(100)
+  const [money, setMoney] = useState(128000000000)
   const [basket, setBasket] = useState([])
   const [total, setTotal] = useState()
   const resetBasket = () => {
@@ -30,9 +28,12 @@ function App() {
   <>
     <Header total={total} money={money} />
 
+    <div className="container products">
+    
     {products.map(product =>(
       <Product key={product.id} total={total} money={money} basket={basket} setBasket={setBasket} product={product} />
-    ))}    
+    ))}   
+      </div> 
     {total > 0 && (
       <Basket resetBasket={resetBasket} products={products} total={total} basket={basket} />
     )}
